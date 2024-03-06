@@ -1,4 +1,3 @@
-const fs = require('fs')
 const express = require('express');
 const bodyParser = require('body-parser');
 const { translate } = require('free-translate');
@@ -63,3 +62,5 @@ app.post('/', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+module.exports = app;
